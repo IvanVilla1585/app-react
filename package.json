@@ -1,0 +1,40 @@
+{
+  "name": "app-react",
+  "version": "1.0.0",
+  "description": "example react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jsdir": "mkdir -p js",
+    "build-js": "NODE_PATH=. browserify -t [ babelify --presets [ es2015 react ] ] index.js > app.js",
+    "start": "npm run build-js"
+  },
+  "author": "Ivan Dario Villa <trezeguet55@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.23.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.1.0",
+    "css-loader": "^0.26.4",
+    "eslint-loader": "^1.6.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.10.1",
+    "json-loader": "^0.5.4",
+    "path": "^0.12.7",
+    "style-loader": "^0.13.2",
+    "styles-loader": "0.0.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}
